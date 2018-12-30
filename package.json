@@ -1,8 +1,8 @@
 {
-  "name": "react-native-boilerplate",
+  "name": "pocket-rent-handy",
   "version": "0.0.0",
-  "description": "Hello Expo!",
-  "author": "bkdev",
+  "description": "Hello World!",
+  "author": "ermohit400",
   "private": true,
   "main": "main.js",
   "dependencies": {

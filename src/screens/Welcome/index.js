@@ -3,9 +3,8 @@ import { connect } from 'react-redux';
 import styled from 'styled-components/native';
 import { FormattedWrapper, FormattedMessage } from 'react-native-globalize';
 
-import { changeLanguage } from '../actions'
-import { Button } from '../components';
-import messages from '../Messages';
+import { Button } from '../../components';
+import messages from '../../Messages';
 
 const ContainerView = styled.View`
   flex: 1;
@@ -18,16 +17,23 @@ const TitleText = styled.Text`
   color: ${props => props.theme.WHITE};
 `;
 
-class SettingsScreen extends Component {
-  render() {
+const ButtonContainer = styled.View`
+  top: 100;
+`
+class WelcomeScreen extends Component {
+	render() {
     return (
 			<FormattedWrapper locale={this.props.curState.Language.language} messages={messages}>
-        <ContainerView>
-          <TitleText><FormattedMessage
-            message="Settings"
-          /></TitleText>
-				  <Button text="Change language to es" onPress={() => {this.props.changeLanguage('es')}} />
-        </ContainerView>
+      <ContainerView>
+				<TitleText>
+				  <FormattedMessage
+            message="Welcome"
+          />
+				  </TitleText>
+        <ButtonContainer>
+          <Button text="Go to main" onPress={() => this.props.navigation.navigate('Main')} />
+        </ButtonContainer>
+      </ContainerView>
 			</FormattedWrapper>
     );
   }
@@ -38,5 +44,4 @@ const mapStateToProps = (state) => ({
 });
 
 export default connect(mapStateToProps, {
-	changeLanguage,
-})(SettingsScreen);
+})(WelcomeScreen);

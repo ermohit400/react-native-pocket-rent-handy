@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "react-native-boilerplate",
-    "description": "A React Native boilerplate with Expo, Redux, React Navigation and some 💕 included.",
-    "slug": "react-native-boilerplate",
+    "name": "Pocket Rent Handy",
+    "description": "A pocket rent handy app for better rent experience between tenant and landlord",
+    "slug": "pocket-rent-handy",
     "privacy": "public",
     "sdkVersion": "25.0.0",
     "version": "1.0.0",
