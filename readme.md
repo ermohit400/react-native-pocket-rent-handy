@@ -11,5 +11,5 @@ $ yarn
 ```
 Open and start project using [Expo XDE](https://expo.io/tools) or use the [CLI](https://github.com/expo/exp) :
 ```
-$ exp start
+$ expo start
 ```
